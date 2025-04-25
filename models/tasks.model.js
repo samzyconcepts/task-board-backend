@@ -6,14 +6,9 @@ const taskSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        description: {
-            type: String,
-            required: true,
-        },
-        icon: {
-            type: String,
-            required: true,
-        },
+        description: String,
+
+        icon: String,
         status: {
             type: String,
             enum: ["todo", "in-progress", "completed", "won't do"],
