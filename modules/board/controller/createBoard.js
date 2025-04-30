@@ -32,7 +32,8 @@ const createBoard = async (req, res) => {
     await board.updateOne({ $push: { tasks: { $each: tasks.map((t) => t._id) } } });
 
     res.status(201).json({
-        status: "You just created a board",
+        status: "success",
+        board,
     });
 };
 

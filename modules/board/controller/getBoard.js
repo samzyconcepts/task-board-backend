@@ -16,9 +16,7 @@ const getBoard = async (req, res) => {
 
     res.status(200).json({
         status: "success",
-        data: {
-            board,
-        },
+        board,
     });
 };
 
