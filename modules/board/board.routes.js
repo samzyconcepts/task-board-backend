@@ -8,7 +8,7 @@ const boardRoutes = express.Router();
 
 // Routes
 boardRoutes.post("/", createBoard);
-boardRoutes.put("/", updateBoard);
+boardRoutes.put("/:id", updateBoard);
 boardRoutes.get("/:id", getBoard);
 boardRoutes.delete("/:id", deleteBoard)
 
