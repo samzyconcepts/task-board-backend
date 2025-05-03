@@ -7,7 +7,7 @@ const updateTask = async (req, res) => {
 
     const task = await taskModel.findByIdAndUpdate(
         id,
-        { title, description, status, icon },
+        { name: title, description, status, icon },
         { new: true }
     );
 
