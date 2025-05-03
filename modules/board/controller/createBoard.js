@@ -5,13 +5,14 @@ const createBoard = async (req, res) => {
     const tasksModel = mongoose.model("Task");
 
     const defaultTask = [
-        { name: "Task in Progress", status: "in-progress" },
-        { name: "Task Completed", status: "completed" },
-        { name: "Task Won't Do", status: "won't do" },
+        { name: "Task in Progress", status: "in-progress", icon:"clock" },
+        { name: "Task Completed", status: "completed", icon: "dumbbell" },
+        { name: "Task Won't Do", status: "won't do", icon: "teacup" },
         {
             name: "Task To Do",
             description: "Work on a Challenge on devChallenges.io, learn Typescript.",
             status: "todo",
+            icon: "books"
         },
     ];
 
